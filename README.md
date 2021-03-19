@@ -1,7 +1,8 @@
 # Apeperia
 
 <ul>WebSite Responsivo, treinando os conhecimentos sobre Html, CSS e JavaScript</ul>
-<ul>Utilizacao do conceito Mobile First</ul>
+<ul>Utilização do conceito Mobile First</ul>
+<ul>Utilização da Metodologia BEM</ul>
 <ul>Site também adaptado para Desktops e Tablets</ul>
 
 # Ferramentas utilizadas
