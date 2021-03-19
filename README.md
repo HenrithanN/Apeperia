@@ -1,6 +1,8 @@
 # Apeperia
 
 <ul>WebSite Responsivo, treinando os conhecimentos sobre Html, CSS e JavaScript</ul>
+<ul>Utilizacao do conceito Mobile First</ul>
+<ul>Site também adaptado para Desktops e Tablets</ul>
 
 # Ferramentas utilizadas
 <ul>Visual Studio Code</ul>
@@ -13,4 +15,3 @@
   https://favicon.io/favicon-generator
   </a>
 /</ul>
-# Obervação
