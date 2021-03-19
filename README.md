@@ -14,4 +14,4 @@
   <a href="https://favicon.io/favicon-generator/">
   https://favicon.io/favicon-generator
   </a>
-/</ul>
+</ul>
