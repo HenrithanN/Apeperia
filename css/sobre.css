@@ -1,0 +1,60 @@
+.sobre {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.sobre__titulo {
+    color: var(--cinza-escuro);         /*Cor da Fonte*/
+    font-weight: 700;                   /*Peso da Fonte*/
+    font-size: 1.5rem;                  /*Tamanho da Fonte*/
+    font-family: var(--montserrat);     /*Familia da Fonte*/
+    text-transform: uppercase;          /*Texto em Caixa Alta*/
+    text-align: center;                 /*Alinhamento do Texto no Centro*/
+
+    margin-bottom: 1.25rem;             /*Margem Inferior*/
+}
+
+.sobre__texto {
+    line-height: normal;                /*Altura da Linha*/
+
+    margin-bottom: 1rem;                /*Margem Inferior*/
+}
+
+.sobre__imagem {
+    display: none;                      /*Imagem nao vai aparecer*/
+}
+.sobre__texto--destaque {
+    color: var(--cinza-escuro);         /*Cor da Fonte*/
+    font-weight: 700;                   /*Peso da Fonte*/
+}
+
+.sobre__plataformas {
+    display: flex;                      /*Flex Container*/
+    flex-wrap: wrap;                    /*Vai quebrar a linha em resolucoes menores*/
+    justify-content: space-evenly;      /*Alinhamento com espaco uniforme */
+
+    margin-bottom: 1rem;                /*Margem Inferior*/
+}
+
+@media screen and (min-width: 1024px){
+    .sobre{
+        display: flex;                                  /*Container Flex*/
+    }
+    .sobre__conteudo{
+        margin-right: 3rem;                             /*Margem a Direita*/
+    }
+    .sobre__titulo{
+        text-align: left;                               /*Alinhamento do Texto*/
+    }
+    .sobre__texto--divisao{
+        border-bottom: 1px solid var(--cinza-medio);    /*Borda Inferior*/
+
+        padding-bottom: 1.5rem;                         /*Espacamento Interno Inferior*/
+    }
+    .sobre__imagem{
+        display: block;                                 /*Display em Bloco*/
+    }
+    .sobre__plataformas--item{
+        transform: scale(1.2);
+    }
+}

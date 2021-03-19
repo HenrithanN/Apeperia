@@ -1,0 +1,59 @@
+.rodape {
+    display: flex;                      /*Container Flex*/
+    flex-direction: column;             /*Direcionamento em Colunas*/
+    align-items: center;                /*Alinhamento de Itens no Centro*/
+
+    background-color: var(--preto); /*Cor de Fundo*/
+
+    padding-top: 2.5rem;                /*Espacamento Interno Top*/
+    padding-bottom: 2rem;               /*Espacamento Interno Bottom*/
+}
+
+.rodape__social {
+    display: flex;                      /*Container Flex*/
+}
+
+.rodape__media {
+    display: block;                     /*Display em Blocos*/
+
+    width: 42px;                        /*Largura*/
+    height: 42px;                       /*Altura*/
+
+    margin: 2rem 1rem;                  /*Margem Inferior*/
+}
+
+.rodape__navegacao {
+    color: var(--branco);               /*Cor da Fonte*/
+    text-align: center;                 /*Alinhamento do Texto*/
+    line-height: 3;                     /*Altura da Linha*/
+}
+
+
+.rodape__link {
+    display: inline-block;              /*Display em Blocos*/
+
+    margin: 0 .5rem .7rem;              /*Margem Top:0 Right: .5rem bottom:.7rem*/
+}
+
+.rodape__logo:active{
+    transform: rotate(360deg);
+    transition: 1s;
+
+}
+
+@media screen and (min-width: 1024px){
+    .rodape{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .rodape__navegacao{
+        text-align: left;
+        min-width: 600px;
+    }
+    .rodape__logo:hover{
+        transform: rotate(360deg);
+        transition: 1s;
+    
+    }
+}

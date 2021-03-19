@@ -1,0 +1,70 @@
+.chamada  {
+    display: flex;                      /*Flex Container*/
+    flex-direction: column;             /*Alinhado em direcao a colunas*/
+    align-items: center;                /*Itens alinhados no centro*/
+
+    color: var(--branco);               /*Cor da Fonte*/
+    text-align: center;                 /*Texto alinhado no centro*/
+    
+    background-color: var(--bg-chamada-mobile); /*Cor de Fundo*/
+
+    padding-top: 12.25rem;              /*Espacamento interno Top*/
+    padding-bottom: 2.5rem;             /*Espacamento interno bottom*/
+}
+
+.chamada__titulo {
+    font-family: var(--montserrat);     /*Familia da Fonte*/
+    font-size: 2rem;                    /*Tamanho da Fonte*/
+    font-weight: 700;                   /*Peso da Fonte*/
+    text-transform: uppercase;          /*Texto se torna caixa alta*/
+
+    margin-top: 7.5rem;                 /*Margem Top*/
+    margin-bottom: 1.5rem;              /*Margem inferior*/
+}
+
+.chamada__texto {
+    font-size: 1.25rem;                 /*Tamanho da fonte*/
+    line-height: normal;                /*Altura da linha da fonte*/
+
+    margin: 0 auto 2.5rem;              /*Margem Top:0 Direita:auto Bottom:2.5rem*/
+}
+
+.chamada__botao {
+    width: 100%;                        /*Largura*/
+}
+
+.chamada__botao:active{
+    background: var(--branco);          /*Cor de fundo do botao*/
+
+    color: var(--preto-transparente);   /*Cor da Fonte*/
+}
+
+/*Media Screen para posicionar o Titulo em telas menores*/
+@media screen and (max-width:330px){
+    .chamada__titulo{        
+        margin-top: 15.5rem;
+    }
+}
+
+@media screen and (min-width:768px){
+    .chamada__texto{
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .chamada{
+        background: url(../img/bg-intro.jpg);   /*Imagem de Fundo*/
+        background-size: cover;                 /*Imagem vai cobrir todo o espaco*/
+        padding-top: 8.25rem;                   /*Espacamento Interno*/
+    }
+    .chamada__titulo{
+        font-size: 3.25rem;                     /*Tamanho da fonte*/
+        margin-bottom: 2rem;                    /*Margem para baixo*/
+    }
+    .chamada__botao:hover{                  /*Quando o mouse passar por cima*/
+        background: var(--branco);          /*Cor de fundo do botao*/
+    
+        color: var(--preto-transparente);   /*Cor da Fonte*/
+    }
+}

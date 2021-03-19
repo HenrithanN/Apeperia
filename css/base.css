@@ -1,0 +1,34 @@
+@import url(_reset.css);
+@import url(_variaveis.css);
+
+body{
+    font-family: 'Open sans', sans-serif;       /*Familia da Fonte*/
+}
+
+.container{
+    padding-right: 6%;                          /*Espacamento interno Direito*/
+    padding-left: 6%;                           /*Espacamento interno Esquerdo*/
+}
+
+.botao{
+    text-align: center;                         /*Alinhamento no Centro*/
+    display: block;                             /*Display em blocos*/
+    
+    width: 100%;                                /*Largura*/
+    max-width: 350px;                           /*Largura Maxima*/
+
+    box-sizing: border-box;                     /*Tamanho do elemento vai ser 100%*/
+                                                /*Independente de Padding ou Border*/
+
+    padding: 1rem 2rem;                         /*Espacamento Interno*/
+
+    border: 1px solid var(--branco);           /*Propriedades da Borda*/
+    border-radius: 5px;                         /*Arredondando a Borda*/
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
+}

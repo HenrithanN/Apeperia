@@ -1,0 +1,43 @@
+.contato {
+    display: flex;                  /*Container Flex*/
+    flex-direction: column;         /*Direcionamento em Colunas*/
+    align-items: center;            /*Itens Alinhados no Centro*/
+
+    text-align: center;             /*Alinhamento do Texto no Centro*/
+
+    padding-top: 2rem;              /*Espacamento interior para o Top*/
+    padding-bottom: 2rem;           /*Espacamento interior para o Bottom*/
+}
+
+.contato__titulo {
+    color: var(--cinza-escuro);    /*Cor da Fonte*/
+    font-weight: 700;              /*Peso da Fonte*/
+    font-size: 1.5rem;             /*Tamanho da Fonte*/
+    font-family: var(--montserrat); /*Familia da Fonte*/
+    text-transform: uppercase;      /*Texto em Caixa Alta*/
+    text-align: center;             /*Texto alinhado no Centro*/
+
+    margin-bottom: 1.25rem;         /*Margem inferior*/
+}
+
+.contato__botao {
+    color: var(--cinza-escuro);     /*Cor da Fonte*/
+
+    border-color: var(--cinza-escuro); /*Cor da Borda*/
+
+    margin-top: 1rem;                  /*Margem para o Top*/
+}
+
+.contato__botao:active{
+    background: var(--preto-transparente);          /*Cor de fundo do botao*/
+
+    color: var(--branco);   /*Cor da Fonte*/
+}
+
+@media screen and (min-width: 1024px){
+    .contato__botao:hover{
+        background: var(--preto-transparente);          /*Cor de fundo do botao*/
+    
+        color: var(--branco);   /*Cor da Fonte*/
+    }
+}

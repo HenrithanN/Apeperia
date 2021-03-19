@@ -1,0 +1,84 @@
+.institucional {
+    display: flex;                      /*Container Flex*/
+    flex-direction: column;             /*Direcionamento em Colunas*/
+    align-items: center;                /*Alinhamento de itens no centro*/
+
+    color: var(--fonte-cinza);          /*Cor da Fonte*/
+    text-align: center;                 /*Alinhamento do Texto no centro*/
+
+    padding-top: 2rem;                  /*Espacamento interno Top*/
+    padding-bottom: 2rem;               /*Espacamento interno Bottom*/
+}
+
+.institucional__titulo {
+    color: var(--cinza-escuro);         /*Cor da Fonte*/
+    font-weight: 700;                   /*Peso da Fonte*/
+    font-size: 1.5rem;                  /*Tamanho da Fonte*/
+    font-family: var(--montserrat);     /*Familia da Fonte*/
+    text-transform: uppercase;          /*Texto em Caixa Alta*/
+    text-align: center;                 /*Alinhamento do Texto no Centro*/
+
+    margin-bottom: 2rem;                /*Margem Inferior*/
+}
+
+.institucional__descricao {
+    font-size: 1.5rem;                  /*Tamanho da Fonte*/
+    line-height: normal;                /*Altura da Linha*/
+
+    margin-bottom: 2rem;                /*Margem Inferior*/
+}
+
+.institucional__endereco {
+
+    font-family: var(--montserrat);
+    font-weight: 400;                   /*Peso da Fonte*/
+    margin-bottom: 2rem;                /*Margem Inferior*/
+}
+
+.institucional__contato {
+    font-size: 1.2rem;                  /*Tamanho da Fonte*/
+    line-height: 1.8;                   /*Altura da linha*/
+
+    margin-top: 2rem;                   /*Margem para o Topo*/
+}
+
+
+.institucional__contato--link{
+    color: var(--fonte-link);           /*Cor da Fonte*/
+    text-decoration: underline;         /*Texto Sublinhado*/
+    display: block;                     /*Display em Bloco*/
+}
+
+.institucional__video {
+    width: 100%;                       /*Largura do Video*/
+}
+
+@media screen and (min-width:768px){
+    .institucional__contato--link{
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .institucional__conteudo{
+        width: 100%;
+        
+        display: flex;
+
+        justify-content: space-between;
+
+        text-align: left;
+    }
+
+    .institucional__video{
+        align-self: flex-end;
+
+        width: 375px;
+    }
+    .institucional__video:hover{
+        width: 720px;
+    }
+    .institucional__contato--link{
+        display: block;
+    }
+}

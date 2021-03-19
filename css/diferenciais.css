@@ -1,0 +1,58 @@
+.diferenciais {
+    padding-top: 3.5rem;                            /*Espacamento interno Top*/
+    padding-bottom: 3.5rem;                         /*Espacamento interno Bottom*/
+}
+
+.diferenciais__lista {
+    display: flex;                                  /*Container Flex*/
+    flex-wrap: wrap;                                /*Quebrar a linha*/
+    justify-content: space-evenly;                  /*Alinhando com espaço uniforme*/
+}
+
+.diferenciais__item {
+    max-width: 300px;                               /*Largura Maxima*/
+
+    box-sizing: border-box;                         /*O tamanho da caixa levara tudo em conta*/
+
+    background-repeat: no-repeat;                   /*Imagem nao repete*/
+    background-position: top 1.25rem left 2.5rem;   /*Posicao da Imagem*/
+
+    padding: 2rem 0 2rem 5rem;                      /*Espacamento Interno Top Right Bottom Left*/
+}   
+
+.diferenciais__item--tempo{
+    background-image: url(../img/icone-relogio.png); /*Imagem Relogio*/
+}
+.diferenciais__item--foco{
+    background-image: url(../img/icone-dinheiro.png); /*Imagem Dinheiro*/
+}
+.diferenciais__item--especialistas{
+    background-image: url(../img/icone-quimica.png); /*Imagem Quimica*/
+}
+
+
+.item__titulo {
+    color: var(--cinza-escuro);                       /*Cor da Fonte*/
+    font-weight: 700;                                 /*Peso da Fonte*/
+    font-size: 1.2rem;                                /*Tamanho da Fonte*/
+    text-transform: uppercase;                        /*Texto em Caixa alta*/
+
+    margin-bottom: 1.5rem;                            /*Margem Inferior*/
+}
+
+.item__texto {
+    line-height: normal;                               /*Altura da Linha*/
+}
+
+@media screen and (min-width:1024px){
+    .diferenciais{
+        background-color: var(--cinza-claro);      /*Cor de fundo*/
+    }
+    .diferenciais__lista{
+        justify-content: space-around;             /*Espacamento ao redor dos elementos*/
+    }
+    .diferenciais__item:hover{
+        transform: scale(1.2);
+        cursor: default;
+    }
+}

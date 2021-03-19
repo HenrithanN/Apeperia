@@ -1,0 +1,66 @@
+.destaques{
+    background-color: var(--azul-claro);    /*Cor de Fundo*/
+
+    padding-top: 2.5rem;                    /*Espacamento interno TOP*/
+    padding-bottom: 2rem;                   /*Espacamento interno Bottom*/
+}
+
+.destaques__titulo{
+    color: var(--cinza-escuro);             /*Cor da Fonte*/
+
+    font-weight: 700;                       /*Peso da Fonte*/
+    font-size: 1.5rem;                      /*Tamanho da Fonte*/
+    font-family: var(--montserrat);         /*Familia da Fonte*/
+
+    text-align: center;                     /*Alinhamento do texto no Centro*/
+    text-transform: uppercase;              /*Texto em caixa alta*/
+
+    margin: 2rem;                           /*Margem*/
+}
+
+.destaques__painel{
+    display: flex;                          /*Container Flex*/
+    flex-direction: column;                 /*Alinhamento em Colunas*/
+    align-items: center;                    /*Itens alinhados no Centro*/
+    
+    margin-bottom: 2rem;                    /*Margem inferior*/
+}
+
+.destaques__painel--imagem{
+    width: 100%;                            /*Largura da Imagem*/
+
+    box-shadow: 0 2px 10px 5px var(--preto-transparente); /*Sombra na Imagem*/
+
+    margin-bottom: .5rem;                   /*Margem inferior*/
+}
+
+.destaques__painel--texto{
+    font-weight: 700;                       /*Peso da Fonte*/
+    font-size: 1.2rem;                      /*Tamanho da Fonte*/
+
+    line-height: normal;                    /*Altura da Linha*/
+}
+
+.destaques__botao{
+    border-color: var(--vermelho-forte);    /*Cor da Borda*/
+
+    color: var(--vermelho-forte);           /*Cor do Texto*/
+
+    margin: 0 auto;                         /*Margem*/
+}
+.destaques__botao:active{
+    background: var(--vermelho-forte);
+    
+    color: var(--branco);
+}
+
+@media screen and (min-width:1024px){
+    .destaques__botao:hover{
+        background: var(--vermelho-forte);
+        
+        color: var(--branco);
+    }
+    .destaques__painel:hover{
+        transform: scale(1.0375);
+    }
+}

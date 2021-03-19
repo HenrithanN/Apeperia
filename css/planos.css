@@ -1,0 +1,145 @@
+.planos {
+    background-color: var(--cinza-claro);   /*Cor de Fundo*/
+    
+    padding-top: 3rem;                      /*Espacamento interno TOP*/
+    padding-bottom: 3rem;                   /*Espacamento interno Bottom*/
+}
+
+.planos__titulo {
+    color: var(--cinza-escuro);             /*Cor da fonte*/
+    font-weight: 700;                       /*Peso da Fonte*/
+    font-size: 1.5rem;                      /*Tamanho da Fonte*/
+    font-family: var(--montserrat);         /*Familia da Fonte*/
+    text-transform: uppercase;              /*Texto em caixa alta*/
+    text-align: center;                     /*Alinhamento do Texto no centro*/
+
+    margin-bottom: 1.25rem;                 /*Margem inferior*/
+}
+
+.planos__cartoes {
+    display: flex;                          /*Container Flex*/
+    flex-direction: column;                 /*Direcao dos Itens = Coluna*/
+    align-items: center;                    /*Alinhamento dos itens no Centro*/
+}
+
+.cartao {
+    display: flex;                          /*Container Flex*/
+    flex-direction: column;                 /*Direcao dos itens = Coluna*/
+
+    background-color: var(--branco);        /*Cor de Fundo*/
+
+    width: 100%;                            /*Largura*/
+    max-width: 300px;                       /*Largura Maxima*/
+
+    margin-bottom: 2rem;                    /*Margem Inferior*/
+
+    border-radius: 5px;                     /*Arredondamento da borda*/
+    box-shadow: 0 2px 10px 2px #00000010; /*Sombra no elemento*/
+}
+
+.cartao__titulo {
+    font-weight: 700;                       /*Peso da Fonte*/
+    font-size: 1.5rem;                      /*Tamanho da Fonte*/
+    text-align: center;                     /*Alinhamento do Texto no Centro*/
+
+    padding: .75rem 0;                      /*Espacamento interno*/
+
+    margin-bottom: .5rem;                   /*Margem Inferior*/
+
+    border-bottom: 1px solid var(--azul-claro); /*Borda Inferior*/
+}
+
+.cartao__conteudo {
+    padding: 0 15%;                             /*Espacamento Interno*/
+}
+
+.cartao__preco {
+    font-weight: 700;                           /*Peso da Fonte*/
+    font-size: 3rem;                            /*Tamanho da Fonte*/
+    text-align: center;                         /*Alinhamento do Texto no Centro*/
+
+    margin-top: 1.25rem;                        /*Margem Top*/
+    margin-bottom: 1.25rem;                     /*Margem Para o Bot*/
+}
+
+.cartao__texto {
+    color: var(--fonte-cinza);                  /*Cor da Fonte*/
+    line-height: 28px;                          /*Altura da linha*/
+}
+
+.cartao__botao {
+    font-size: 1.2rem;                          /*Tamanho da Fonte*/
+    font-weight: 700;                           /*Peso da Fonte*/
+
+    width: 100%;                                /*Largura*/
+
+    align-self: center;                         /*Alinhando a si mesmo no Centro*/
+
+    padding: .75rem 2rem;                       /*Espacamento Interno*/
+
+    margin-top: 1rem;                           /*Margem para o Top*/
+    margin-bottom: 1rem;                        /*Margem para o bottom*/
+}
+
+.cartao--start {
+    color: var(--planos-cartao-start);          /*Cor da Fonte*/
+}
+
+.cartao--ultra {
+    color: var(--planos-cartao-ultra);          /*Cor da Fonte*/
+}
+
+.cartao--mega {
+    color: var(--planos-cartao-mega);           /*Cor da Fonte*/
+}
+
+.cartao__botao--start {
+    border-color: var(--planos-cartao-start);   /*Cor da Borda*/
+}
+
+.cartao__botao--start:active{
+    background: var(--planos-cartao-start);     /*Cor de fundo do botao*/
+
+    color: var(--branco);                       /*Cor da Fonte*/
+}
+
+.cartao__botao--ultra {
+    border-color: var(--planos-cartao-ultra);   /*Cor da borda*/
+}
+
+.cartao__botao--ultra:active{
+    background: var(--planos-cartao-ultra);     /*Cor de fundo do botao*/
+
+    color: var(--branco);                       /*Cor da Fonte*/
+}
+
+.cartao__botao--mega {
+    border-color: var(--planos-cartao-mega);    /*Cor da borda*/
+}
+
+.cartao__botao--mega:active{
+    background: var(--planos-cartao-mega);     /*Cor de fundo do botao*/
+
+    color: var(--branco);                       /*Cor da Fonte*/
+}
+
+@media screen and (min-width:768px){
+    .cartao{
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .cartao{
+        width: 30%;
+    }
+    .planos__cartoes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .cartao:hover{
+        transform: scale(1.1);
+        box-shadow:  10px 10px 3px var(--preto-transparente) ;
+    }
+}

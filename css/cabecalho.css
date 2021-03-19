@@ -1,0 +1,75 @@
+.cabecalho {
+    color: var(--branco);                 /*Cor da Fonte*/
+
+    width: 100%;                          /*Largura*/
+
+    box-sizing: border-box;               /*Respeitando o conteudo dentro do box*/
+
+    display: flex;                        /*Container Flex*/
+    flex-direction: column;               /*Alinhado em direção de colunas*/
+    align-items: center;                  /*Itens Alinhados no Centro*/
+  
+    padding-bottom: .75rem;               /*Espacamento interno bottom*/
+
+    border-bottom: 1px solid var(--cinza-transparente);   /*Borda inferior*/
+
+    position: absolute;                   /*Posicao Absoluta*/
+    
+}
+
+.cabecalho__logo {
+    margin-bottom: 1rem;                   /*Margem inferior de 1rem*/
+}
+.cabecalho__logo:active{                   /*Quando Clicado*/
+    transform: rotate(360deg);             /*Movimento de Rotacao 360Graus*/
+    transition: 1s;                        /*Delay de 1 segundo*/
+}
+
+.cabecalho__navegacao {
+    text-align: center;                    /*Alinhamento de texto no Centro*/
+}
+
+.cabecalho__link {
+    font-size: 1.1rem;                      /*Tamanho da Fonte*/
+
+    display: inline-block;                  /*Display em Linhas*/
+
+    margin-right: .7rem;                    /*Margem a direita*/
+    margin-bottom: 1.25rem;                 /*Margem Inferior*/
+    margin-left: .7rem;                     /*Margem a esquerda*/
+
+    border: 1px solid var(--branco);        /*Propriedades da Borda*/
+    padding: 1rem;                          /*Espacamento interno*/
+    border-radius: 5px;                     /*Arredondamento das Bordas*/
+}
+
+.cabecalho__link:active{
+    background: var(--branco);          /*Cor de fundo do botao*/
+
+    color: var(--preto-transparente);   /*Cor da Fonte*/
+}
+
+@media screen and (min-width:1024px){
+    .cabecalho{
+        flex-direction: row;                /*Direcionamento em Linhas*/
+        justify-content: space-between;     /*Espacamento entre os elementos*/
+        border: none;                       /*Sem a borda para baixo*/
+        padding-top: 2rem;                  /*Espacamento interno para o topo*/
+    }
+    .cabecalho__logo:hover{                 /*Quando o mouse passar por cima*/
+        transform: rotate(360deg);          /*Movimento de Rotacao*/       
+        transition: 1s;                     /*Delay de 1 Segundo*/
+    }
+    .cabecalho__link:hover{                 /*Quando o mouse passar por cima*/
+        background: var(--branco);          /*Cor de fundo do botao*/
+    
+        color: var(--preto-transparente);   /*Cor da Fonte*/
+    }
+    .cabecalho__link{                 
+        margin-right: .5rem;                    /*Margem a direita*/
+        margin-bottom: 1.25rem;                 /*Margem Inferior*/
+        margin-left: .5rem;                     /*Margem a esquerda*/
+    }
+
+
+}
